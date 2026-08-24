@@ -56,3 +56,31 @@ INTERNSHIPPYTHON-1
 ||
   | - persoanl_information.py
   | - README.md
+
+
+  INTERVIEW QUESTIONS 
+  1) WHAT IS A VARIABLE TO PYTHON?
+  Basically it is an address of the memory given by the user.
+  eg : age = 19
+  hence , age is teh variable
+
+  2) DIFFERENCE BETWEEN THE INPUT() AND prinT()?
+  input() it is used to input the information from the user. 
+  print() it is used to display the output to the user. 
+
+  3) what is an f-strings?
+  An f-string is a convienient way to put variables or expressions directly inside a string. 
+  name = "Harsh"
+  print(f"name: {name}")
+
+  4)what is type conversion required for user input?
+  Because input() returns the entered value as a string.
+  for eg: 
+  age = input("Enter teh age: ")
+  in this example, 
+  we see that the age give input in string data type.
+
+  age = int(input("Enter teh age: "))
+  in this example, 
+  we see that the age is print in int data type.
+  
