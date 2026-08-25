@@ -140,4 +140,8 @@ INTERVIEW QUESTIONS
 ----INTERNSHIP PROGRESS----
 > day 1 - personal information program
 > day 2 - simple calculator program
+
+### 🧪 Day 2 Output
+
+![Day 2 Calculator Output](day2-output.png)
   
