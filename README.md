@@ -83,4 +83,61 @@ INTERNSHIPPYTHON-1
   age = int(input("Enter teh age: "))
   in this example, 
   we see that the age is print in int data type.
+
+
+  #day - 2 
+  simple calculator program
+  --project overview:
+  This project is a simple Python calculator that accepts two numbers from the user and performs basic arithmetic operations.
+
+  OBJECTIVE:
+
+  to practice 
+  ___ user input handling
+  __ arithmetic operators
+  __ Functions
+  __ Basic program logic
+
+  Features:
+
+  ___ addition
+  ___ subtraction
+ ____ multiplication
+ ___ division
+ ___ floor(//)
+
+ Technologies used:
+ ___ VS code
+ ___ Python
+
+ How to run
+ 1) open the vs code 
+ 2) make a calculator file 
+ 3) tehn run the program 
+ 4) by git add, init, commit and then push 
+ 5) make your local repo to the github.
+
+ Sample output:
+
+ Enter teh first number: 12
+Enter the second number: 2
+
+----SIMPLE CALCULATOR----
+addition:  14.0
+subtraction: 10.0
+multiplication:  24.0
+Division:  6.0
+floor_division: 6.0
+
+INTERVIEW QUESTIONS 
+
+1) - /performs regular division.
+   - // performs floor division which give round off the value of whole division.
+   - % performs modulo division which give remainder as an output.
+
+2) The program checks for division or modulus by zero and displays an appropriate message instead of causing the program to crash.
+
+----INTERNSHIP PROGRESS----
+> day 1 - personal information program
+> day 2 - simple calculator program
   
