@@ -202,6 +202,8 @@ else:
 > day 3 - even or odd checker program
 
 ### day 3 - output
+## 📸 Sample Output
 
+![Day 3 Output](day-3-output.png)
 
 
