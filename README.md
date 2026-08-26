@@ -144,4 +144,7 @@ INTERVIEW QUESTIONS
 ### 🧪 Day 2 Output
 
 ![Day 2 Calculator Output](day2-output.png)
+
+
+
   
