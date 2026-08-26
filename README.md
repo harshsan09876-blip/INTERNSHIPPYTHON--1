@@ -146,5 +146,62 @@ INTERVIEW QUESTIONS
 ![Day 2 Calculator Output](day2-output.png)
 
 
+Day - 3 : BUILD AN EVEN OR ODD CHECKER
 
-  
+PROJECT OVERVIEW
+this project is a simple python program to display the even number or odd number by given data through the user. 
+
+Objective:
+the objective of this project is to learn:
+. conditional statements(if or else)
+. THE modulo operator(%)
+.integer input using input() and int()
+. basic python program
+
+Tehnologies used:
+Python
+Vs code
+
+Program logic:
+The program checks the remainder when the entered number is divided by 2:
+. if number % 2 == 0 then even 
+. else odd.
+
+Python code:
+a = int(input("Enter the number: "))
+if a % 2 == 0:
+    print("even")
+    
+else:
+    print("odd")
+
+    Test cases:
+    input | output
+    13        odd
+
+
+ sample output:
+
+ Enter the number: 13
+ odd
+
+ INTERVIEW QUESTIONS:
+
+ 1) HOW DO YOU CHECK WHETHER A NUMBER IS EVEN IN PYTHON?
+ ANS - we check the number is even when number % 2 gives remainder is equal to zero.
+
+ 2)what is the purpose of % operator?
+ ANS - It returns the remainder after division.
+
+ 3)What is the difference between if, elif, else?
+ ANS - if checks a condition, elif checks another condition where previous condition is false. Else executes the final condition whereas all of the previous conditions is false.
+
+ INTERNSHIP  PROGRESS
+ > day 1 - personal information program
+> day 2 - simple calculator program
+> day 3 - even or odd checker program
+
+### day 3 - output
+
+
+
