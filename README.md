@@ -206,4 +206,124 @@ else:
 
 ![Day 3 Output](day-3-output.png)
 
+###DAY -4 INTERNSHIP 
+# 🎓 Student Grade Calculator
+
+## 📌 Project Overview
+
+The Student Grade Calculator is a Python program that accepts a student's name and marks for multiple subjects.
+
+It calculates:
+
+- Total marks
+- Percentage
+- Final grade
+
+The program also validates user input to prevent invalid marks.
+
+---
+
+## 🎯 Objective
+
+This project was created as part of **Day 4 of the Veda Technology Python Programming Internship**.
+
+The main objectives are to practice:
+
+- Conditional statements
+- Arithmetic operations
+- Input validation
+- `try-except` exception handling
+- Loops
+- User input
+- Formatted output
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- VS Code
+
+---
+
+## ⚙️ How the Program Works
+
+1. The program asks for the student's name.
+2. It asks for the number of subjects.
+3. It accepts marks for each subject.
+4. Marks are validated between `0` and `100`.
+5. Invalid or non-numeric input is rejected.
+6. The program calculates total marks.
+7. The percentage is calculated.
+8. A grade is assigned according to the predefined criteria.
+9. The final student result is displayed.
+
+---
+
+## 📊 Grade Criteria
+
+| Percentage | Grade |
+|------------|-------|
+| 90–100% | A++ |
+| 80–89% | A |
+| 70–79% | B+ |
+| 60–69% | B |
+| 50–59% | C+ |
+| 40–49% | C |
+| 30–39% | D |
+| 20–29% | E |
+| Below 20% | F |
+
+---
+
+## ✅ Input Validation
+
+The program checks that:
+
+- The number of subjects is greater than `0`.
+- Marks are not negative.
+- Marks do not exceed `100`.
+- Numeric input is entered where required.
+
+If invalid input is entered, the program displays an appropriate message and asks for valid input.
+
+---
+
+## 🧮 Calculation
+
+### Total Marks
+
+```text
+Total Marks = Sum of marks obtained in all subjects
+
+png
+🎓 Interview Questions
+1. How would you validate user input?
+
+I would use conditional checks to verify that marks are within the allowed range. I can also use try-except to handle invalid data types.
+
+2. How does Python evaluate multiple conditions?
+
+Python evaluates conditions from top to bottom in an if-elif-else structure. Once a condition is true, its corresponding block is executed.
+
+3. What happens if a user enters a value outside the expected range?
+
+The program identifies the value as invalid and asks the user to enter a valid value within the allowed range.
+
+🚀 Future Improvements
+Add individual subject names.
+Store student results in a file.
+Add multiple student records.
+Create a graphical user interface.
+Generate a result report automatically.
+👨‍💻 Internship
+
+Veda Technology — Python Programming Internship
+
+Day 4 Task: Student Grade Calculator
+
+## 📸 Sample Output
+
+![Day 4 Program Output](day-4-output.png)
+
 
