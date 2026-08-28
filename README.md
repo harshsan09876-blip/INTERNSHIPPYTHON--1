@@ -327,3 +327,208 @@ Day 4 Task: Student Grade Calculator
 ![Day 4 Program Output](day-4-output.png)
 
 
+# 🎯 Number Guessing Game
+
+## 📌 Day 5 — Python Programming Internship
+
+**Track:** Python Programming
+**Level:** 1
+**Task:** 5 — Number Guessing Game
+
+---
+
+## 📖 Project Description
+
+The Number Guessing Game is a simple Python game in which the computer generates a random number between **1 and 100**.
+
+The user repeatedly enters guesses until the correct number is found. After every guess, the program gives a hint:
+
+* **Too high** — when the guess is greater than the secret number.
+* **Too low** — when the guess is smaller than the secret number.
+* **Correct** — when the guess matches the secret number.
+
+The program also counts the number of valid attempts made by the user.
+
+---
+
+## 🎯 Objective
+
+The main objective of this task is to practice:
+
+* `while` loops
+* `if`, `elif`, and `else` conditions
+* Python's `random` module
+* User input
+* Type conversion
+* Attempt counters
+* Exception handling with `try/except`
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python**
+* **random module**
+* **VS Code**
+* **GitHub**
+
+---
+
+## ⚙️ How the Program Works
+
+1. The program imports the `random` module.
+2. A random number between **1 and 100** is generated.
+3. The attempt counter starts at `0`.
+4. The user enters a guess.
+5. The program validates the input.
+6. The attempt counter increases for a valid guess.
+7. The program compares the guess with the secret number.
+8. It displays **Too high** or **Too low** as a hint.
+9. The game continues until the correct number is guessed.
+10. The program displays the total number of attempts.
+
+---
+
+## 🧠 Key Python Concepts
+
+### Random Number Generation
+
+```python
+number = random.randint(1, 100)
+```
+
+This generates a random integer between 1 and 100.
+
+### Attempt Counter
+
+```python
+attempts += 1
+```
+
+This increases the attempt count after every valid guess.
+
+### Comparison
+
+```python
+if guess == number:
+    print("Correct!")
+
+elif guess > number:
+    print("Too high.")
+
+else:
+    print("Too low.")
+```
+
+### Input Validation
+
+```python
+try:
+    guess = int(input("Enter your guess: "))
+except ValueError:
+    print("Invalid input!")
+```
+
+This prevents the program from crashing when the user enters something that cannot be converted into an integer.
+
+---
+
+## 💻 Sample Gameplay
+
+```text
+Number guessing game
+I have selected a number between 1 and 100.
+
+Enter your guess: 67
+Too high.
+
+Enter your guess: 89
+Too high.
+
+Enter your guess: 23
+Too low.
+
+Enter your guess: 34
+Too low.
+
+Enter your guess: 60
+Too high.
+
+Enter your guess: 56
+Too high.
+
+Enter your guess: 50
+Too low.
+
+Enter your guess: 51
+Too low.
+
+Enter your guess: 52
+Too low.
+
+Enter your guess: 53
+Too low.
+
+Enter your guess: 54
+Too low.
+
+Enter your guess: 55
+Correct! You guessed the number in 12 attempts.
+```
+
+---
+
+## 📸 Output
+
+The sample gameplay screenshot is included in:
+
+**`day-5-output.png`**
+
+---
+
+## 🎤 Interview Questions
+
+### 1. What is the `random` module?
+
+The `random` module is a built-in Python module used to generate random values. For example, `random.randint(1, 100)` generates a random integer between 1 and 100.
+
+### 2. What is the difference between `while` and `for` loops?
+
+A `for` loop is generally used to iterate over a sequence or a specific range. A `while` loop continues executing as long as its condition is true and is useful when the number of iterations is not known in advance.
+
+### 3. How would you limit the number of attempts?
+
+I would use an attempt counter and a maximum-attempt value. The loop would stop when the counter reaches the maximum allowed attempts.
+
+Example:
+
+```python
+attempts = 0
+maximum_attempts = 5
+
+while attempts < maximum_attempts:
+    # take user guess
+    attempts += 1
+```
+
+---
+
+## 📂 Project Files
+
+```text
+INTERNSHIPPYTHON--1/
+│
+├── number_guessing_game.py
+├── day-5-output.png
+└── README.md
+```
+
+---
+
+## ✅ Task Completion
+
+**Day 5 — Completed ✔️**
+
+The Number Guessing Game successfully demonstrates random number generation, loops, conditional statements, user interaction, input validation, and attempt counting.
+
+![Day-5-output](day-5-output.png)
