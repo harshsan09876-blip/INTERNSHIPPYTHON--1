@@ -532,3 +532,110 @@ INTERNSHIPPYTHON--1/
 The Number Guessing Game successfully demonstrates random number generation, loops, conditional statements, user interaction, input validation, and attempt counting.
 
 ![Day-5-output](day-5-output.png)
+
+# Day 6 – Multiplication Table Program
+
+## 📌 Task
+
+Build a Python program that takes a number from the user and displays its multiplication table from 1 to 10.
+
+## 🧠 My Logic / Pseudocode
+
+```python
+# build a multiplication table
+# use range (1, 11)
+# for i = 0;
+# i will change from 1 to 10
+# multiply a * i
+# then display the result
+```
+
+## 💻 Final Program
+
+```python
+# Multiplication Table
+
+a = int(input("Enter the number: "))
+
+for i in range(1, 11):
+    print(a, "x", i, "=", a * i)
+```
+
+## 🔍 How It Works
+
+1. The user enters a number.
+2. The number is stored in variable `a`.
+3. `range(1, 11)` generates numbers from **1 to 10**.
+4. The `for` loop assigns each number to `i`.
+5. `a * i` calculates each multiplication result.
+6. `print()` displays the multiplication table.
+
+## 🧪 Actual Output
+
+I entered **12** as the input.
+
+```text
+Enter the number: 12
+
+12 x 1 = 12
+12 x 2 = 24
+12 x 3 = 36
+12 x 4 = 48
+12 x 5 = 60
+12 x 6 = 72
+12 x 7 = 84
+12 x 8 = 96
+12 x 9 = 108
+12 x 10 = 120
+```
+
+## 🎤 Interview Questions & Answers
+
+### 1. When would you use a `for` loop?
+
+**Answer:**
+For loop determines the finite iteration. It is used when we need to perform a task for a fixed or finite number of iterations.
+
+### 2. What does `range()` return?
+
+**Answer:**
+`range()` generates a sequence of numbers. For example, `range(1, 10)` gives:
+
+```text
+1, 2, 3, 4, 5, 6, 7, 8, 9
+```
+
+The ending number is not included.
+
+### 3. What is the difference between `range(5)` and `range(1, 5)`?
+
+**Answer:**
+
+```text
+range(5)    → 0, 1, 2, 3, 4
+range(1, 5) → 1, 2, 3, 4
+```
+
+`range(5)` starts from **0**, while `range(1, 5)` starts from **1**. The ending value is excluded in both cases.
+
+## 📚 Concepts Learned
+
+* `for` loop
+* `range()`
+* Variables
+* `input()`
+* `int()`
+* Multiplication operator `*`
+* `print()`
+
+## 🎯 Key Learning
+
+The main concept learned today was using a **`for` loop with `range()`** to repeat an operation a fixed number of times.
+
+The program follows a simple flow:
+
+**Input → Loop → Multiply → Display**
+
+## ✅ Day 6 Status
+
+**Completed Successfully 🚀**
