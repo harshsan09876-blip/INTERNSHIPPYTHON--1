@@ -639,3 +639,4 @@ The program follows a simple flow:
 ## ✅ Day 6 Status
 
 **Completed Successfully 🚀**
+![Day-6-output](day-6_output.png)
