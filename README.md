@@ -642,3 +642,244 @@ The program follows a simple flow:
 ![Day-6-output](day-6_output.png)
 
 ##DAY - 7 : Create a Password Generator
+# 🔐 Day 7 — Simple Password Validator
+
+## 📌 Internship
+
+**Company:** Veda Technology
+**Track:** Python Programming Internship
+**Day:** 7 of 45
+**Date:** August 30, 2026
+
+---
+
+## 🎯 Project Title
+
+**Simple Password Validator**
+
+---
+
+## 📝 Description
+
+The objective of this project is to build a Python program that checks whether a password satisfies basic security requirements.
+
+The program validates the password based on:
+
+* Minimum length
+* Uppercase character
+* Lowercase character
+* Number/digit
+* Special character
+
+This project helps practice **strings, conditions, loops, string methods, and basic input validation**.
+
+---
+
+## 🛠️ Tools & Technologies
+
+* Python
+* `string` module
+* VS Code
+
+---
+
+## 📋 Validation Rules
+
+A password is considered valid when it satisfies all of the following requirements:
+
+1. Minimum **8 characters**
+2. At least **one uppercase character**
+3. At least **one lowercase character**
+4. At least **one digit**
+5. At least **one special character**
+
+---
+
+## 🧠 Logic Used
+
+1. Take the password as input.
+2. Create Boolean variables for the validation requirements.
+3. Use a `for` loop to examine each character.
+4. Use `isupper()` to check for uppercase characters.
+5. Use `islower()` to check for lowercase characters.
+6. Use `isdigit()` to check for digits.
+7. Use `string.punctuation` to check for special characters.
+8. Use `len()` to check the minimum length.
+9. Check all requirements using conditional statements.
+10. Display whether the password is valid or incomplete.
+
+---
+
+## 💻 Python Code
+
+```python
+import string
+
+password = input("Enter your password: ")
+
+uppercase = False
+lowercase = False
+digit = False
+special = False
+
+for character in password:
+    if character.isupper():
+        uppercase = True
+
+    if character.islower():
+        lowercase = True
+
+    if character.isdigit():
+        digit = True
+
+    if character in string.punctuation:
+        special = True
+
+if len(password) >= 8 and uppercase and lowercase and digit and special:
+    print("Password is valid")
+else:
+    print("Password is incomplete")
+
+    if len(password) < 8:
+        print("Password must contain at least 8 characters")
+
+    if not uppercase:
+        print("Password must contain an uppercase character")
+
+    if not lowercase:
+        print("Password must contain a lowercase character")
+
+    if not digit:
+        print("Password must contain a number")
+
+    if not special:
+        print("Password must contain a special character")
+```
+
+---
+
+## 🧪 Output & Testing
+
+The program was tested with both a **valid** and an **invalid** password.
+
+### ✅ Test Case 1 — Valid Password
+
+**Input:**
+
+```text
+Hello!123
+```
+
+**Output:**
+
+```text
+Password is valid
+```
+
+### ❌ Test Case 2 — Invalid Password
+
+**Input:**
+
+```text
+hello123
+```
+
+**Output:**
+
+```text
+Password is incomplete
+Password must contain an uppercase character
+Password must contain a special character
+```
+
+### 📸 Output Screenshot
+
+Both test cases were executed successfully and captured in one output screenshot:
+
+**`day-7 password_output.png`**
+
+---
+
+## 🎤 Interview Questions & Answers
+
+### 1. How can you check whether a string contains a digit?
+
+**Answer:**
+We can use the `isdigit()` string method to check whether a character or string contains only digits.
+
+Example:
+
+```python
+character.isdigit()
+```
+
+---
+
+### 2. What are string methods?
+
+**Answer:**
+String methods are built-in Python methods used to perform operations or checks on strings, such as checking uppercase, lowercase, digits, alphabets, and other characters.
+
+Examples:
+
+```python
+isupper()
+islower()
+isdigit()
+isalpha()
+isalnum()
+```
+
+---
+
+### 3. Why should passwords not be stored or displayed as plain text?
+
+**Answer:**
+Passwords should not be stored or displayed as plain text because unauthorized users could gain access to them and misuse them. Passwords should be securely protected, typically using hashing.
+
+---
+
+## 📚 Concepts Practiced
+
+* Python strings
+* `input()`
+* `for` loop
+* `if` conditions
+* Boolean variables
+* `len()`
+* String methods
+* `isupper()`
+* `islower()`
+* `isdigit()`
+* `string.punctuation`
+* Basic input validation
+
+---
+
+## 💡 Key Learning
+
+Through this project, I learned how to validate user input using Python string methods, loops, Boolean variables, and conditional statements.
+
+I also learned the importance of protecting passwords instead of storing or displaying them as plain text.
+
+---
+
+## 📂 Project Files
+
+```text
+INTERNSHIPPYTHON--1/
+│
+├── password_generator.py
+├── day-7 password_output.png
+└── README.md
+```
+
+---
+
+## ✅ Day 7 Status
+
+**Completed Successfully 🎉**
+
+**Veda Technology Python Programming Internship — Day 7/45**
+day - 7 screenshot
+![day-7-output](day-7_output.png)
