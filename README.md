@@ -640,3 +640,5 @@ The program follows a simple flow:
 
 **Completed Successfully 🚀**
 ![Day-6-output](day-6_output.png)
+
+##DAY - 7 : Create a Password Generator
