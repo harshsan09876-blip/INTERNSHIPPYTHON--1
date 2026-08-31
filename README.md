@@ -883,3 +883,438 @@ INTERNSHIPPYTHON--1/
 **Veda Technology Python Programming Internship — Day 7/45**
 day - 7 screenshot
 ![day-7-output](day-7_output.png)
+
+# Day 8 – Simple To-Do List
+
+**Veda Technology – Python Programming Internship**
+
+## 📌 Project Overview
+
+For Day 8 of my Python internship at **Veda Technology**, I built a simple **command-line To-Do List application** using Python.
+
+The application allows the user to:
+
+* Add tasks
+* View tasks
+* Update tasks
+* Remove tasks
+* Exit the application
+* Handle invalid menu choices
+
+This project helped me understand how **lists, loops, conditions, functions/operations, and menu-driven programs** can be combined to create a practical application.
+
+---
+
+## 🎯 Objective
+
+The main objective of this project was to learn and practice:
+
+* Python Lists
+* `input()`
+* `append()`
+* `remove()`
+* `index()`
+* `for` loops
+* `while` loops
+* `if`, `elif`, and `else`
+* Menu-driven programming
+* CRUD operations
+* Basic input validation
+
+---
+
+## 🛠️ Tools Used
+
+* **Python**
+* **VS Code / Python IDE**
+* **Command Line / Terminal**
+* **Git & GitHub**
+
+---
+
+## 🧠 My Approach / Logic
+
+I developed the program step by step.
+
+### Step 1 – Create a List
+
+I started by creating a list to store tasks:
+
+```python
+tasks = ["Shahi paneer", "malai kofta", "naan", "sundaye"]
+```
+
+### Step 2 – Add a Task
+
+I used `input()` to take a new task and `append()` to add it to the list.
+
+```python
+new_task = input("Enter a new task: ")
+tasks.append(new_task)
+```
+
+### Step 3 – View Tasks
+
+I used a `for` loop to display every task individually.
+
+```python
+for task in tasks:
+    print(task)
+```
+
+### Step 4 – Remove a Task
+
+I used `input()` and `remove()` to remove a selected task.
+
+```python
+remove_task = input("Enter the task to remove: ")
+tasks.remove(remove_task)
+```
+
+### Step 5 – Update a Task
+
+I first considered removing the old task and appending the new task. Then I improved the logic so that the updated task stays in its original position.
+
+```python
+update_task = input("Enter the task you want to update: ")
+new_task = input("Enter the new task: ")
+
+index = tasks.index(update_task)
+tasks[index] = new_task
+```
+
+### Step 6 – Menu
+
+I used `while True` to continuously display the menu until the user chooses Exit.
+
+```python
+while True:
+    print("1. Add Task")
+    print("2. View Tasks")
+    print("3. Update Task")
+    print("4. Remove Task")
+    print("5. Exit")
+
+    user = input("Enter the choice: ")
+```
+
+---
+
+## 📝 Pseudocode
+
+```text
+START
+
+Create an empty/list of tasks
+
+REPEAT:
+    Display menu
+
+    Ask user for choice
+
+    IF choice = 1:
+        Ask for new task
+        Add task to list
+
+    ELSE IF choice = 2:
+        Display all tasks
+
+    ELSE IF choice = 3:
+        Ask which task to update
+        Ask for new task
+        Find old task
+        Replace old task with new task
+
+    ELSE IF choice = 4:
+        Ask which task to remove
+        Remove task from list
+
+    ELSE IF choice = 5:
+        Exit the program
+
+    ELSE:
+        Display "Invalid choice"
+
+UNTIL user chooses Exit
+
+END
+```
+
+---
+
+## 🔄 CRUD Operations
+
+CRUD represents four basic operations used for managing data.
+
+| CRUD  | Meaning | Implementation                    |
+| ----- | ------- | --------------------------------- |
+| **C** | Create  | Add a task using `append()`       |
+| **R** | Read    | View tasks using a `for` loop     |
+| **U** | Update  | Find and replace an existing task |
+| **D** | Delete  | Remove a task using `remove()`    |
+
+---
+
+## 💻 Complete Program
+
+```python
+# ============================================
+# Day 8 - Simple To-Do List
+# Veda Technology - Python Programming Internship
+# ============================================
+
+# PSEUDOCODE / LOGIC:
+# 1. Create a list to store tasks
+# 2. Display a menu to the user
+# 3. Ask the user to enter a choice
+# 4. If choice is 1:
+#       Take a new task
+#       Add it to the list
+# 5. If choice is 2:
+#       Display all tasks using a loop
+# 6. If choice is 3:
+#       Ask which task to update
+#       Ask for the new task
+#       Replace the old task
+# 7. If choice is 4:
+#       Ask which task to remove
+#       Remove it from the list
+# 8. If choice is 5:
+#       Exit the program
+# 9. Otherwise:
+#       Display "Invalid choice"
+# 10. Repeat the menu until the user chooses Exit
+
+tasks = ["Shahi paneer", "malai kofta", "naan", "sundaye"]
+
+while True:
+
+    print("\n===== TO-DO LIST =====")
+    print("1. Add Task")
+    print("2. View Tasks")
+    print("3. Update Task")
+    print("4. Remove Task")
+    print("5. Exit")
+
+    user = input("Enter the choice: ")
+
+    # CREATE - ADD TASK
+    if user == "1":
+
+        new_task = input("Enter a new task: ")
+        tasks.append(new_task)
+
+        print("Task added successfully!")
+
+    # READ - VIEW TASKS
+    elif user == "2":
+
+        print("\nYour Tasks:")
+
+        for task in tasks:
+            print(task)
+
+    # UPDATE TASK
+    elif user == "3":
+
+        update_task = input("Enter the task you want to update: ")
+        new_task = input("Enter the new task: ")
+
+        if update_task in tasks:
+
+            index = tasks.index(update_task)
+            tasks[index] = new_task
+
+            print("Task updated successfully!")
+
+        else:
+            print("Task not found!")
+
+    # DELETE - REMOVE TASK
+    elif user == "4":
+
+        remove_task = input("Enter the task to remove: ")
+
+        if remove_task in tasks:
+
+            tasks.remove(remove_task)
+
+            print("Task removed successfully!")
+
+        else:
+            print("Task not found!")
+
+    # EXIT
+    elif user == "5":
+
+        print("Exiting To-Do List...")
+        break
+
+    # INVALID CHOICE
+    else:
+
+        print("Invalid choice! Please enter 1-5.")
+```
+
+---
+
+## ▶️ Sample Execution
+
+```text
+===== TO-DO LIST =====
+1. Add Task
+2. View Tasks
+3. Update Task
+4. Remove Task
+5. Exit
+
+Enter the choice: 2
+
+Your Tasks:
+Shahi paneer
+malai kofta
+naan
+sundaye
+```
+
+### Adding a Task
+
+```text
+Enter the choice: 1
+Enter a new task: Kadai paneer
+Task added successfully!
+```
+
+### Updating a Task
+
+```text
+Enter the choice: 3
+Enter the task you want to update: naan
+Enter the new task: Butter naan
+Task updated successfully!
+```
+
+### Removing a Task
+
+```text
+Enter the choice: 4
+Enter the task to remove: sundaye
+Task removed successfully!
+```
+
+### Invalid Choice
+
+```text
+Enter the choice: 8
+Invalid choice! Please enter 1-5.
+```
+
+### Exiting
+
+```text
+Enter the choice: 5
+Exiting To-Do List...
+```
+
+---
+
+# 🎤 Interview Questions & Answers
+
+### 1. Why are lists useful?
+
+**Answer:**
+Lists are useful because they allow us to store multiple values in a single variable. They are ordered and can be modified, so we can easily add, remove, update, and access items.
+
+### 2. What does CRUD mean?
+
+**Answer:**
+CRUD stands for **Create, Read, Update, and Delete**. These are the four basic operations used to manage data.
+
+### 3. Why would you separate operations into functions?
+
+**Answer:**
+Separating operations into functions makes the program easier to understand, maintain, test, and reuse. Each function can handle one specific task.
+
+---
+
+## 📚 Key Python Concepts Learned
+
+### `append()`
+
+Adds an item to the end of a list.
+
+```python
+tasks.append(new_task)
+```
+
+### `remove()`
+
+Removes a specific value from a list.
+
+```python
+tasks.remove(remove_task)
+```
+
+### `index()`
+
+Finds the position of an item in a list.
+
+```python
+index = tasks.index(update_task)
+```
+
+### `while True`
+
+Keeps the menu running continuously.
+
+```python
+while True:
+```
+
+### `break`
+
+Stops the loop and exits the application.
+
+```python
+break
+```
+
+### `for` Loop
+
+Used to go through each task in the list.
+
+```python
+for task in tasks:
+    print(task)
+```
+
+---
+
+## ✅ Project Outcome
+
+I successfully created a **command-line To-Do List application** using Python.
+
+Through this project, I practiced:
+
+* Lists
+* Loops
+* Conditions
+* User input
+* CRUD operations
+* Menu-driven programming
+* Basic validation
+* Program structure and logic
+
+This project was a step forward from simple individual Python programs toward building a **small interactive application**.
+
+---
+
+## 👨‍💻 Internship Progress
+
+**Internship:** Veda Technology
+**Track:** Python Programming
+**Day:** 8
+**Project:** Simple To-Do List
+**Status:** ✅ Completed
+**Completed Successfully 🚀**
+![Day-8-output](day-8_output.png)
