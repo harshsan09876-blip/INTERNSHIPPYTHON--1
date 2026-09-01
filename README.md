@@ -1318,3 +1318,258 @@ This project was a step forward from simple individual Python programs toward bu
 **Status:** ✅ Completed
 **Completed Successfully 🚀**
 ![Day-8-output](day-8_output.png)
+
+# 🐍 Day 9 – Practice Python Lists With Student Records
+
+## 📌 Internship
+
+**Veda Technology – Python Programming Internship**
+
+## 📅 Day
+
+**Day 9**
+
+---
+
+## 🎯 Objective
+
+The objective of this task is to practice Python Lists by creating a student record program that can:
+
+* Store student names and marks
+* Display student records
+* Search for a student
+* Find the highest score
+* Find the lowest score
+* Sort students according to their marks
+
+---
+
+## 🛠️ Tools Used
+
+* **Python**
+* **VS Code**
+* **Git & GitHub**
+
+---
+
+## 💡 Concepts Used
+
+* Python Lists
+* `for` loop
+* `if-else`
+* `in` operator
+* `index()`
+* `len()`
+* `max()`
+* `min()`
+* `sorted()`
+* `zip()`
+* `lambda`
+* User input
+
+---
+
+## 🧠 Program Logic / Pseudocode
+
+```text
+START
+
+Create a list of student names
+Create a list of marks corresponding to each student
+
+Display all student records
+
+Ask the user to enter a student name
+
+IF the student exists:
+    Find the student's index
+    Display the marks using the same index
+ELSE:
+    Display "Student not found"
+
+Find the highest mark
+Find the student who achieved it
+Display the highest score
+
+Find the lowest mark
+Find the student who achieved it
+Display the lowest score
+
+Sort the student records by marks
+Display students from highest to lowest
+
+END
+```
+
+---
+
+## 💻 Program
+
+```python
+student_names = ["Harsh", "Aman", "Riya", "Priya", "Rahul"]
+student_marks = [85, 72, 91, 68, 78]
+
+print("===== STUDENT RECORD SYSTEM =====")
+
+print("\nStudent Records:")
+
+for i in range(len(student_names)):
+    print(student_names[i], ":", student_marks[i])
+
+search_name = input("\nEnter student name to search: ")
+
+if search_name in student_names:
+    index = student_names.index(search_name)
+    print(search_name, "scored", student_marks[index], "marks.")
+else:
+    print("Student not found.")
+
+highest_score = max(student_marks)
+highest_index = student_marks.index(highest_score)
+
+print("\nHighest Score:")
+print(student_names[highest_index], ":", highest_score)
+
+lowest_score = min(student_marks)
+lowest_index = student_marks.index(lowest_score)
+
+print("\nLowest Score:")
+print(student_names[lowest_index], ":", lowest_score)
+
+sorted_records = sorted(
+    zip(student_names, student_marks),
+    key=lambda student: student[1],
+    reverse=True
+)
+
+print("\nStudents Sorted by Marks (Highest to Lowest):")
+
+for name, marks in sorted_records:
+    print(name, ":", marks)
+```
+
+---
+
+## 🧪 Sample Output
+
+```text
+===== STUDENT RECORD SYSTEM =====
+
+Student Records:
+Harsh : 85
+Aman : 72
+Riya : 91
+Priya : 68
+Rahul : 78
+
+Enter student name to search: Riya
+Riya scored 91 marks.
+
+Highest Score:
+Riya : 91
+
+Lowest Score:
+Priya : 68
+
+Students Sorted by Marks (Highest to Lowest):
+Riya : 91
+Harsh : 85
+Rahul : 78
+Aman : 72
+Priya : 68
+```
+
+---
+
+## 🎤 Interview Questions & Answers
+
+### 1. What is a Python list?
+
+A Python list is an ordered and mutable collection that can store multiple values in a single variable.
+
+Example:
+
+```python
+students = ["Harsh", "Aman", "Riya"]
+```
+
+Lists support indexing, slicing, adding, removing, and modifying elements.
+
+---
+
+### 2. What is the difference between `sort()` and `sorted()`?
+
+`sort()` modifies the original list, while `sorted()` creates and returns a new sorted list.
+
+Example:
+
+```python
+numbers = [5, 2, 8, 1]
+
+numbers.sort()
+```
+
+Here, the original list is changed.
+
+With `sorted()`:
+
+```python
+numbers = [5, 2, 8, 1]
+
+new_numbers = sorted(numbers)
+```
+
+The original list remains unchanged.
+
+---
+
+### 3. When would a dictionary be better than a list?
+
+A dictionary is better when we need to store information using **key-value pairs** and access data using a meaningful key.
+
+Example:
+
+```python
+student = {
+    "name": "Harsh",
+    "marks": 85
+}
+```
+
+For larger student records containing names, marks, IDs, grades, and other information, dictionaries can make the data easier to organize and access.
+
+---
+
+## 📚 What I Learned
+
+Through this task, I learned how to:
+
+* Work with Python lists
+* Keep related data synchronized using indexes
+* Search elements inside a list
+* Find maximum and minimum values
+* Sort records
+* Use `zip()` to combine related lists
+* Understand when a dictionary can be a better data structure
+
+---
+
+## 📸 Output
+
+The program was successfully executed and tested.
+
+**Output Screenshot:** `day-9-output.png`
+
+---
+
+## 🚀 Conclusion
+
+Day 9 helped me move beyond basic Python programs and practice real-world list processing. I learned how student records can be stored, searched, analyzed, and sorted using Python lists and built-in functions.
+
+This task improved my understanding of **data handling and problem-solving using Python**.
+
+---
+
+**#Python #PythonProgramming #VedaTechnology #Internship #LearningPython #Programming #GitHub**
+(day-9 output)
+![Day-9-output](day-9_outpput.png)
