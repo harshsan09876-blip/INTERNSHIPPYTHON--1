@@ -2044,3 +2044,4 @@ This practice prepared me for working with more structured data and larger Pytho
 **Day 10 Completed ✅**
 
 > Learning consistently, building logic step by step, and improving through practice. 🚀
+![alt text](day_10_folder/day_10_output.png)
