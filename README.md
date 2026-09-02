@@ -1573,3 +1573,474 @@ This task improved my understanding of **data handling and problem-solving using
 **#Python #PythonProgramming #VedaTechnology #Internship #LearningPython #Programming #GitHub**
 (day-9 output)
 ![Day-9-output](day-9_outpput.png)
+
+# 🚀 Day 10 – Python Lists: Student Records & Logic Building
+
+**Internship:** Veda Technology
+**Track:** Python Programming
+**Day:** 10
+**Topic:** Python Lists and Logic Building
+
+---
+
+## 📌 Project Overview
+
+In Day 10 of my Python internship at **Veda Technology**, I focused on strengthening my **logic-building skills using Python Lists**.
+
+Instead of only using built-in functions, I practiced solving problems using:
+
+* Lists
+* Indexing
+* `for` loops
+* `if` conditions
+* Comparison operators
+* Variables and counters
+* Boolean flags
+* `break`
+* `.append()`
+* `.remove()`
+
+The main practice problem was based on **student names and Chemistry marks**.
+
+---
+
+## 🎯 Objective
+
+The objective of this task was to understand how lists can be used to:
+
+1. Store student records.
+2. Connect related data using indexes.
+3. Search for a particular student.
+4. Find the highest and lowest marks.
+5. Count students according to a condition.
+6. Filter students based on marks.
+7. Add and remove list elements.
+8. Improve programming logic through loops and conditions.
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python**
+* **VS Code**
+* **Git & GitHub**
+
+---
+
+## 📂 Data Used
+
+```python
+students = ["Harsh", "Mohini", "Kratika", "Chirag", "Deepender"]
+
+subject_chemistry = [76, 89, 90, 89, 96]
+```
+
+The indexes of both lists represent the same student.
+
+| Index | Student   | Chemistry |
+| ----: | --------- | --------: |
+|     0 | Harsh     |        76 |
+|     1 | Mohini    |        89 |
+|     2 | Kratika   |        90 |
+|     3 | Chirag    |        89 |
+|     4 | Deepender |        96 |
+
+### 💡 Important Logic
+
+For example:
+
+```python
+students[4]
+```
+
+gives:
+
+```text
+Deepender
+```
+
+and:
+
+```python
+subject_chemistry[4]
+```
+
+gives:
+
+```text
+96
+```
+
+Therefore, the same index connects the student's name with their marks.
+
+---
+
+# 🧠 Logic Building Process
+
+## 1. Display Lists
+
+First, I created and displayed the student and marks lists.
+
+```python
+print(students)
+print(subject_chemistry)
+```
+
+---
+
+## 2. Finding the Highest Marks
+
+### Logic
+
+```text
+Start with the first mark as the highest
+        ↓
+Check every mark
+        ↓
+If current mark > highest
+        ↓
+Update highest
+```
+
+I also stored the student name using the same index.
+
+```python
+highest = subject_chemistry[0]
+highest_student = students[0]
+
+for i in range(len(students)):
+    if subject_chemistry[i] > highest:
+        highest = subject_chemistry[i]
+        highest_student = students[i]
+```
+
+**Result:**
+
+```text
+Highest Marks: 96
+Highest Scoring Student: Deepender
+```
+
+---
+
+## 3. Finding the Lowest Marks
+
+### Logic
+
+I started with the first mark as the lowest and compared every other mark.
+
+```python
+lowest = subject_chemistry[0]
+
+for mark in subject_chemistry:
+    if mark < lowest:
+        lowest = mark
+```
+
+**Result:**
+
+```text
+Lowest Marks: 76
+```
+
+---
+
+## 4. Counting Students Scoring More Than 90
+
+### Logic
+
+```text
+Start count = 0
+        ↓
+Check every mark
+        ↓
+If mark > 90
+        ↓
+Increase count by 1
+```
+
+```python
+count = 0
+
+for mark in subject_chemistry:
+    if mark > 90:
+        count = count + 1
+```
+
+**Result:**
+
+```text
+Students scoring more than 90: 1
+```
+
+---
+
+## 5. Displaying Students Scoring More Than 90
+
+I used the index to connect the student's name with the corresponding mark.
+
+```python
+for i in range(len(students)):
+    if subject_chemistry[i] > 90:
+        print(students[i], "-", subject_chemistry[i])
+```
+
+**Output:**
+
+```text
+Deepender - 96
+```
+
+---
+
+# 🔎 6. Searching for a Student
+
+I built a search system using a **Boolean flag**.
+
+### Logic
+
+```text
+Start found = False
+        ↓
+Check every student
+        ↓
+Name matches?
+   ↓             ↓
+ YES             NO
+  ↓               ↓
+found = True    Continue
+  ↓
+break
+        ↓
+After loop
+        ↓
+found == False?
+        ↓
+Student not found
+```
+
+```python
+student = input("Enter student name: ")
+
+found = False
+
+for i in range(len(students)):
+    if student == students[i]:
+        found = True
+        print("Student is found")
+        print("Chemistry Marks:", subject_chemistry[i])
+        break
+
+if found == False:
+    print("Student not found")
+```
+
+### 💡 What I Learned
+
+The `found` variable remembers whether the student was successfully located.
+
+The `break` statement stops the loop once the student is found.
+
+---
+
+# ➕ 7. Using `append()`
+
+I learned that `.append()` is used to add a new element to the end of a list.
+
+```python
+students.append("Vikas")
+```
+
+---
+
+# ➖ 8. Using `remove()`
+
+I learned that `.remove()` removes a specified value from a list.
+
+```python
+students.remove("Vikas")
+```
+
+---
+
+# 🧩 Key Python Concepts Practiced
+
+| Concept          | Purpose                     |
+| ---------------- | --------------------------- |
+| List             | Store multiple values       |
+| Index            | Access a particular element |
+| `for` loop       | Process elements repeatedly |
+| `if`             | Make decisions              |
+| `max()`          | Find maximum value          |
+| `.index()`       | Find position of a value    |
+| `len()`          | Find list length            |
+| `count` variable | Count matching values       |
+| Boolean flag     | Remember search result      |
+| `break`          | Stop a loop                 |
+| `.append()`      | Add an element              |
+| `.remove()`      | Remove an element           |
+
+---
+
+# 💻 Final Output
+
+Example results from the program:
+
+```text
+Students: ['Harsh', 'Mohini', 'Kratika', 'Chirag', 'Deepender']
+Chemistry Marks: [76, 89, 90, 89, 96]
+
+Highest Marks: 96
+Highest Scoring Student: Deepender
+
+Lowest Marks: 76
+
+Students scoring more than 90: 1
+
+Students scoring more than 90:
+Deepender - 96
+
+Enter student name: Kratika
+Student is found
+Chemistry Marks: 90
+```
+
+---
+
+# 🎓 Interview Questions & Answers
+
+### Q1. What is a list in Python?
+
+**Answer:**
+A list is an ordered and mutable collection used to store multiple values in a single variable.
+
+---
+
+### Q2. What is indexing in Python?
+
+**Answer:**
+Indexing is used to access individual elements of a list. Python uses zero-based indexing, so the first element has index `0`.
+
+---
+
+### Q3. Why did you use the same index for two lists?
+
+**Answer:**
+I used the same index because the two lists contain related information. The student at `students[i]` corresponds to the marks at `subject_chemistry[i]`.
+
+---
+
+### Q4. What does `len()` do?
+
+**Answer:**
+`len()` returns the number of elements in a list.
+
+Example:
+
+```python
+len(students)
+```
+
+returns `5`.
+
+---
+
+### Q5. What is the purpose of a `for` loop?
+
+**Answer:**
+A `for` loop allows me to process each element of a list one by one.
+
+---
+
+### Q6. What is the purpose of `break`?
+
+**Answer:**
+`break` immediately stops the loop. I used it after finding the required student so that the program does not continue unnecessary searching.
+
+---
+
+### Q7. Why did you use `found = False`?
+
+**Answer:**
+I used a Boolean flag to remember whether the student was found during the loop. It starts as `False` and becomes `True` when a matching student is found.
+
+---
+
+### Q8. What is the difference between `>` and `>=`?
+
+**Answer:**
+
+* `>` means greater than.
+* `>=` means greater than or equal to.
+
+For example:
+
+```python
+mark > 90
+```
+
+means marks must be strictly greater than 90.
+
+---
+
+### Q9. What does `.append()` do?
+
+**Answer:**
+`.append()` adds a new element to the end of a list.
+
+---
+
+### Q10. What does `.remove()` do?
+
+**Answer:**
+`.remove()` removes a specified value from a list.
+
+---
+
+# 💭 My Learning Reflection
+
+Today I focused more on **logic building rather than simply memorizing Python commands**.
+
+I learned how to break a problem into smaller steps:
+
+```text
+Problem
+   ↓
+Understand the data
+   ↓
+Create lists
+   ↓
+Use indexes
+   ↓
+Apply loops
+   ↓
+Add conditions
+   ↓
+Store results
+   ↓
+Display output
+```
+
+The most important concept I practiced today was **connecting two lists using the same index**.
+
+I also learned that programming is not only about knowing commands; it is about developing the logic to solve a problem step by step.
+
+---
+
+# 🚀 Day 10 Outcome
+
+By completing this task, I strengthened my understanding of:
+
+**Python Lists → Indexing → Loops → Conditions → Searching → Counting → Flags → List Methods**
+
+This practice prepared me for working with more structured data and larger Python programs in the upcoming internship tasks.
+
+---
+
+## 👨‍💻 Internship Progress
+
+**Veda Technology – Python Programming Internship**
+
+**Day 10 Completed ✅**
+
+> Learning consistently, building logic step by step, and improving through practice. 🚀
