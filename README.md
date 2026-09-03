@@ -2045,3 +2045,128 @@ This practice prepared me for working with more structured data and larger Pytho
 
 > Learning consistently, building logic step by step, and improving through practice. 🚀
 ![alt text](day_10_folder/day_10_output.png)
+
+# Day 11 – Word and Character Counter
+
+## 📌 Project Overview
+
+This project is a **Text Analysis Program** developed in Python.
+
+The program accepts a paragraph from the user and analyzes the text by calculating the number of **characters, words, sentences, and spaces**.
+
+## 🎯 Objective
+
+* Practice Python string manipulation.
+* Understand `split()`, `len()`, and `count()`.
+* Perform basic text processing.
+* Handle empty user input.
+* Improve understanding of strings in Python.
+
+## 🛠️ Tools Used
+
+* **Python**
+* **VS Code**
+
+## ⚙️ Features
+
+The program calculates:
+
+1. Total number of characters
+2. Total number of words
+3. Total number of sentences
+4. Total number of spaces
+
+It also handles empty input to avoid incorrect processing.
+
+## 🧠 Python Concepts Used
+
+* Strings
+* `input()`
+* `len()`
+* `split()`
+* `count()`
+* `if-else`
+* Loops / basic conditions
+* String manipulation
+
+## 🔄 Program Workflow
+
+```text
+Start
+  ↓
+Enter a paragraph
+  ↓
+Check for empty input
+  ↓
+Count characters
+  ↓
+Count words
+  ↓
+Count spaces
+  ↓
+Count sentences
+  ↓
+Display statistics
+  ↓
+End
+```
+
+## 📝 Sample Paragraph
+
+```text
+Python is easy to learn. It is powerful and useful!
+```
+
+## 📊 Sample Output
+
+```text
+Text Analysis Results
+---------------------
+Characters : 52
+Words      : 10
+Sentences  : 2
+Spaces     : 9
+```
+
+> Note: The exact character and space counts depend on the paragraph entered by the user.
+
+## 🎓 Interview Questions
+
+### 1. What does `split()` do?
+
+`split()` is used to split a string into parts based on a separator. By default, it splits at whitespace and returns a list.
+
+### 2. What is the difference between `len()` and `count()`?
+
+`len()` returns the total number of characters or items, while `count()` returns how many times a specified character, substring, or item occurs.
+
+### 3. How are strings represented in Python?
+
+Strings in Python are sequences of characters enclosed in single or double quotation marks.
+
+Example:
+
+```python
+name = "Harsh"
+```
+
+## 📂 Project Structure
+
+```text
+Day-11/
+│
+├── word_character_counter.py
+├── README.md
+└── day-11-output.png
+```
+
+## 🚀 Learning Outcome
+
+Through this project, I practiced **basic text processing and string manipulation in Python** and strengthened my understanding of commonly used string methods and functions.
+
+## 👨‍💻 Internship Progress
+
+**Python Programming Internship – Veda Technology**
+
+**Day 11 of 45**
+E:\internshipforpython\INTERNSHIPPYTHON--1\day_10_folder\day_10_output.png
